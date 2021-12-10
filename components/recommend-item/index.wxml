@@ -1,0 +1,19 @@
+<view class="container" bind:tap="go2Recommend">
+    <l-card l-class="card-container" l-img-class="head-img" type="cover" image-mode="widthFix" image="{{data.data.content.data.cover.feed}}">
+        <view class="content">
+            <text class="description">{{data.data.content.data.description}}</text>
+            <view class="bottom-container">
+                <view class="owner">
+                    <image class="avatar" src="{{data.data.content.data.owner.avatar}}" />
+                    <text class="nickname">{{data.data.content.data.owner.nickname}}</text>
+                </view>
+                <view class="owner">
+                    <l-icon name="like" size="28" color="#666" />
+                    <text class="like-text">{{data.data.content.data.consumption.collectionCount}}</text>
+                </view>
+            </view>
+        </view>
+    </l-card>
+
+    <l-icon class="icon" size="30" color="#fff" name="{{data.data.content.type === 'video' ? 'video' : 'picture'}}" />
+</view>

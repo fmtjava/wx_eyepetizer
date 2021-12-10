@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "l-tabs":"/miniprogram_npm/lin-ui/tabs/index",
+    "l-tabpanel":"/miniprogram_npm/lin-ui/tabpanel/index",
+    "l-segment":"/miniprogram_npm/lin-ui/segment/index",
+    "l-segment-item":"/miniprogram_npm/lin-ui/segment-item/index",
+    "daily-tab":"/components/daily-tab/index",
+    "category-tab":"/components/category-tab/index",
+    "recommend-tab":"/components/recommend-tab/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "首页"
+}

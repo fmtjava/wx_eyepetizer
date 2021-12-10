@@ -1,0 +1,14 @@
+<view class="container">
+  <l-segment class="segment" bind:linchange="changeTabs">
+    <l-segment-item tab="日报" key="one"  />
+    <l-segment-item tab="分类" key="two" />
+    <l-segment-item tab="推荐" key="third" />
+  </l-segment>
+
+  <daily-tab id="daily" wx:if="{{currentIndex === 0}}"/>
+
+  <category-tab id="category" wx:if="{{currentIndex === 1}}"/>
+
+  <recommend-tab id= "recommend" wx:if="{{currentIndex === 2}}"/>
+
+</view>

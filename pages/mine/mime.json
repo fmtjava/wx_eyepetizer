@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-avatar":"/miniprogram_npm/lin-ui/avatar/index"
+  },
+  "navigationBarTitleText": "我的"
+}

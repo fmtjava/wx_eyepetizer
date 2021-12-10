@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "recommend-item":"/components/recommend-item/index",
+    "l-water-flow":"/miniprogram_npm/lin-ui/water-flow/index"
+  }
+}

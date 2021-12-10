@@ -1,0 +1,61 @@
+.container{
+  width: 100%;
+  position: relative;
+}
+.card-container {
+  width: 100%;
+  padding: 0rpx;
+  margin-bottom: 20rpx;
+}
+
+.head-img {
+  border-top-left-radius: 8rpx;
+  border-top-right-radius: 8rpx;
+}
+
+.icon{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+
+.description {
+  color: #000000DD;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 20rpx;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx;
+}
+
+.owner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+}
+
+.nickname {
+  margin-left: 10rpx;
+  width: 160rpx;
+  font-size: 24rpx;
+}
+
+.like-text {
+  margin-left: 6rpx;
+  font-size: 24rpx;
+}

@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  margin-top: 60rpx;
+}
+
+.setting-text{
+  font-size: 30rpx;
+  color: #333333;
+  margin-top: 80rpx;
+}

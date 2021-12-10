@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "daily-item":"/components/daily-item/index"
+  }
+}

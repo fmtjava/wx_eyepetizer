@@ -1,0 +1,21 @@
+<view class="container">
+  <swiper class="banner-swiper" indicator-dots autoplay indicator-color="#FFFFFF3D" indicator-active-color="#fff">
+
+    <block wx:for="{{bannerList}}" wx:key="index">
+      <swiper-item class="banner-swiper-item">
+        <image class="banner-image" src="{{item.data.cover.feed}}" />
+      </swiper-item>
+    </block>
+
+  </swiper>
+
+  <block wx:for="{{dailyList}}" wx:key="index">
+    <view wx:if="{{item.type === 'textHeader'}}" class="title-container">
+      <text class="title">{{item.data.text}}</text>
+    </view>
+    <daily-item wx:else item="{{item}}" />
+  </block>
+
+  <l-loadmore show="{{true}}"/>
+
+</view>

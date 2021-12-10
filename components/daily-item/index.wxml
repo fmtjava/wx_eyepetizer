@@ -1,0 +1,27 @@
+<view class="daily-container">
+
+  <view bind:tap="go2VideoDetail" class="feed-container">
+    <image class="feed-img" src="{{item.data.cover.feed}}" />
+
+    <view class="category-container">
+      <text class="category-text">{{item.data.category}}</text>
+    </view>
+
+    <view class="time-container">
+      <text class="time-text">{{item.videoTimeText}}</text>
+    </view>
+
+  </view>
+
+  <view class="bottom-container">
+    <image class="author" src="{{item.data.author === null ? item.data.author.icon : item.data.tags[0].headerImage}}" />
+
+    <view class="desc-container">
+      <text class="title">{{item.data.title}}</text>
+      <text class="tag">{{item.data.author === null ? item.data.author.name : item.data.tags[0].name}}</text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+  <l-avatar class="avatar" open-data="{{['userAvatarUrl','userNickName']}}" placement="bottom"/>
+  <text class="setting-text">我的收藏</text>
+  <text class="setting-text">我的关注</text>
+  <text class="setting-text">我的浏览</text>
+</view>

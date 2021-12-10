@@ -1,0 +1,103 @@
+/* components/daily/daily.wxss */
+
+.daily-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  position: relative;
+}
+
+.feed-container{
+  margin-bottom: 10rpx;
+  position: relative;
+}
+
+.feed-img{
+  width: 100%;
+  border-radius: 8rpx;
+  height: 400rpx;
+}
+
+.category-container{
+  display: flex;
+  position: absolute;
+  top: 20rpx;
+  left: 30rpx;
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  background-color: #FFFFFF8A;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-text{
+  font-size: 28rpx;
+  color: #ffffff;
+}
+
+.time-container{
+  display: flex;
+  position: absolute;
+  right: 30rpx;
+  bottom: 40rpx;
+  background-color: #0000008A;
+  padding: 10rpx;
+  border-radius: 8rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-text{
+  font-weight: bold;
+  font-size: 24rpx;
+  color: #ffffff;
+}
+
+.bottom-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  align-items: center;
+}
+
+.author{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.desc-container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.title{
+  font-size: 28rpx;
+  color: #000000;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.tag{
+  color: #9a9a9a;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.line{
+  background-color: #0000001F;
+  height: 1px;
+}

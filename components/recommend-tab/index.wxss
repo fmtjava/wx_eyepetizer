@@ -1,0 +1,5 @@
+.container{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 100rpx;
+}

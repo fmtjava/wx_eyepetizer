@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "l-grid":"/miniprogram_npm/lin-ui/grid/index",
+    "l-grid-item":"/miniprogram_npm/lin-ui/grid-item/index"
+  }
+}

@@ -1,0 +1,6 @@
+<l-grid l-class="category-container" row-num="2">
+    <l-grid-item bind:linitemtap="go2CategoryDetail" l-grid-item-class="l-grid-item" wx:for="{{categoryList}}" key="{{index}}" slot="{{index}}">
+       <image class="category-img" src="{{item.bgPicture}}"/>
+       <text class="category-text">#{{item.name}}</text>
+     </l-grid-item>
+</l-grid>

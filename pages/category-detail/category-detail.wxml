@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="head-container">
+    <image class="headerImage" src="{{headerImage}}" />
+    <view class="category-container">
+      <text class="category-name">{{name}}</text>
+      <text class="category-desc">{{description}}</text>
+    </view>
+  </view>
+  <block wx:for="{{itemList}}" wx:key="index">
+    <daily-item item="{{item}}" />
+  </block>
+
+  <l-loadmore show="{{true}}" />
+</view>

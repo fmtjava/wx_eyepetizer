@@ -1,0 +1,5 @@
+<view class="container">
+    <l-water-flow generic:l-water-flow-item="recommend-item"/>
+    <l-loadmore show="{{true}}"/>
+</view>
+
