@@ -19,14 +19,10 @@ Component({
    */
   methods: {
     go2VideoDetail(event){
-      console.log(this.properties.item)
-      wx.previewMedia({
-        sources: [{
-          url:this.properties.item.data.playUrl,
-          type:'video',
-          poster:this.properties.item.data.cover.feed
-        }],
-      })
+      const itemJsonStr = encodeURIComponent(JSON.stringify(this.properties.item))
+     wx.navigateTo({
+       url: '/pages/video-detail/video-detail?item=' + itemJsonStr,
+     })
     }
   }
 })

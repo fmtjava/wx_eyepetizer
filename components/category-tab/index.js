@@ -28,6 +28,12 @@ Component({
             categoryList:res.data
           })
           wx.stopPullDownRefresh()
+        },
+        fail:(res)=>{
+          wx.showToast({
+            icon:'error',
+            title: res.errMsg,
+          })
         }
       })
     },

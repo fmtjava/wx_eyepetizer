@@ -1,0 +1,60 @@
+<view class="container">
+  <image class="blurred" src="{{item.data.cover.blurred}}" />
+  <view class="content">
+    <text class="title">{{item.data.title}}</text>
+    <text class="category">{{item.data.category}} / {{item.releaseTimeStr}}</text>
+    <text class="description">{{item.data.description}}</text>
+
+    <view class="consumption">
+      <view class="collect">
+        <l-icon color="#fff" size="30" name="like" />
+        <text class="collectionCount">{{item.data.consumption.collectionCount}}</text>
+      </view>
+      <view class="share">
+        <l-icon color="#fff" size="30" name="share" />
+        <text class="collectionCount">{{item.data.consumption.shareCount}}</text>
+      </view>
+      <view class="share">
+        <l-icon color="#fff" size="30" name="comment" />
+        <text class="collectionCount">{{item.data.consumption.replyCount}}</text>
+      </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="authorContainer">
+      <image class="author" src="{{item.data.author.icon}}" />
+      <view class="authorInfo">
+        <text class="authorName">{{item.data.author.name}}
+        </text>
+        <text class="authorDes">{{item.data.author.name}}
+        </text>
+      </view>
+      <view class="follow">
+        <text class="followTex">+ 关注</text>
+      </view>
+    </view>
+
+    <view class="line"></view>
+
+    <block wx:for="{{itemList}}" wx:key="index">
+      <text class="relateTitle" wx:if="{{item.type !== 'videoSmallCard'}}">{{item.data.text}}</text>
+      <view data-index="{{index}}" bind:tap="go2VideoDetail" class="relateContainer" wx:else>
+        <view class="feedContainer">
+          <image class="feed-image" src="{{item.data.cover.feed}}" />
+          <view class="timeContainer">
+            <text class="timeText">{{item.videoTimeText}}</text>
+          </view>
+        </view>
+        <view class="videoInfo">
+          <text class="title">{{item.data.title}}</text>
+          <text class="category">#{{item.data.category}} / {{item.data.author == null ? '' : item.data.author.name}}</text>
+        </view>
+      </view>
+    </block>
+
+  </view>
+
+  <video class="video" src="{{item.data.playUrl}}" show-center-play-btn='{{false}}' show-play-btn="{{true}}" autoplay controls />
+
+</view>

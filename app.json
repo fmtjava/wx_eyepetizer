@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/mine/mime",
-    "pages/category-detail/category-detail"
+    "pages/category-detail/category-detail",
+    "pages/video-detail/video-detail"
   ],
   "usingComponents": {
     "l-icon": "/miniprogram_npm/lin-ui/icon/index",

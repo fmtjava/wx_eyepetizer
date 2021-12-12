@@ -100,6 +100,12 @@ Page({
        })
 
        wx.stopPullDownRefresh()
+      },
+      fail:(res)=>{
+        wx.showToast({
+          icon:'error',
+          title: res.errMsg,
+        })
       }
     })
   },
@@ -122,6 +128,12 @@ Page({
         itemList:this.data.itemList.concat(itemList),
          _nextPageUrl:nextPageUrl
        })
+      },
+      fail:(res)=>{
+        wx.showToast({
+          icon:'error',
+          title: res.errMsg,
+        })
       }
     })
   },

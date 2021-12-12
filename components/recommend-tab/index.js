@@ -31,6 +31,12 @@ Component({
 
          wx.lin.renderWaterFlow(itemList, true)
          wx.stopPullDownRefresh()
+        },
+        fail:(res)=>{
+          wx.showToast({
+            icon:'error',
+            title: res.errMsg,
+          })
         }
       })
     },
@@ -47,6 +53,12 @@ Component({
         this.data.nextPageUrl = nextPageUrl
 
          wx.lin.renderWaterFlow(itemList, false)
+        },
+        fail:(res)=>{
+          wx.showToast({
+            icon:'error',
+            title: res.errMsg,
+          })
         }
       })
     },

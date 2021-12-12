@@ -39,6 +39,12 @@ Component({
          wx.stopPullDownRefresh()
   
          this.onLoadMore()
+        },
+        fail:(res)=>{
+          wx.showToast({
+            icon:'error',
+            title: res.errMsg,
+          })
         }
       })
     },
@@ -62,9 +68,23 @@ Component({
            dailyList:this.data.dailyList.concat(itemList),
            _nextPageUrl:nextPageUrl
          })
+        },
+        fail:(res)=>{
+          wx.showToast({
+            icon:'error',
+            title: res.errMsg,
+          })
         }
       })
     },
+    go2VideoDetail(event){
+      const index = event.currentTarget.dataset.index
+      const item = this.data.bannerList[index]
+      const itemJsonStr = encodeURIComponent(JSON.stringify(item))
+     wx.navigateTo({
+       url: '/pages/video-detail/video-detail?item=' + itemJsonStr,
+     })
+    }
   },
   attached: function() {
     this.onRefresh()
