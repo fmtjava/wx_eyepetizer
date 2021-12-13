@@ -5,7 +5,7 @@ Flutter版：[Flutter_Eyepetizer](https://github.com/fmtjava/Flutter_Eyepetizer)
 React Native版：[ReactNative_Eyepetizer](https://github.com/fmtjava/ReactNative_Eyepetizer)
 
 # 前言
- 最近项目组负责调研小程序开发，并通过学习到的小程序知识把仿开眼视频实现了一下，因为调研的时间有限，所以目前只是复刻部分页面，后续会补全其它的页面。
+ 最近项目组负责调研小程序开发，便通过学习到的小程序知识把仿开眼视频实现了一下，因为调研的时间有限，所以目前只是复刻部分页面，后续会补全其它的页面。
  如果觉得项目能够帮助到你们，希望给一个 `Star` 或 `Fork` ^_^ ，谢谢**
  
  # 项目截图
