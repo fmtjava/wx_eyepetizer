@@ -1,0 +1,11 @@
+<view class="container">
+  <block wx:for="{{newsList}}" wx:key="index">
+    <text class="title" wx:if="{{item.type === 'textCard'}}">{{item.data.text}}</text>
+    <view class="card" data-index="{{index}}" bind:tap="go2NewsDetail" wx:else>
+      <image class="image" src="{{item.data.backgroundImage}}" />
+      <block wx:for="{{item.data.titleList}}" wx:key="index" wx:for-item="titleItem">
+        <text class="content">{{titleItem}}</text>
+      </block>
+    </view>
+  </block>
+</view>
