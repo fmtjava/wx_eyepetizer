@@ -53,8 +53,12 @@ Page({
         break;
       case 1:
         this.selectComponent("#category").onRefresh()
-        break;  
+        break;
       case 2:
+        const newsComponent = this.selectComponent("#news")
+        newsComponent.onRefresh()
+        break      
+      case 3:
         this.selectComponent("#recommend").onRefresh()
         break  
     }
@@ -72,6 +76,10 @@ Page({
       case 1:
         break;  
       case 2:
+        const newsComponent = this.selectComponent("#news")
+        newsComponent.onLoadMore()
+        break  
+      case 3:
         const recommendComponent = this.selectComponent("#recommend")
         recommendComponent.onLoadMore()
         break  

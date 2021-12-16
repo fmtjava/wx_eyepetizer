@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/mine/mime",
     "pages/category-detail/category-detail",
-    "pages/video-detail/video-detail"
+    "pages/video-detail/video-detail",
+    "pages/news-detail/news-detail"
   ],
   "usingComponents": {
     "l-icon": "/miniprogram_npm/lin-ui/icon/index",
