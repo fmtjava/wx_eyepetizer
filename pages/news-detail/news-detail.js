@@ -12,9 +12,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '新闻',
-    })
     const url = options.url
     this.setData({
       url:decodeURIComponent(url)

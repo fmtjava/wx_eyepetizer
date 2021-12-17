@@ -1,0 +1,29 @@
+<view class="container">
+  <block wx:for="{{followList}}" wx:for-index="outIndex" wx:key="outIndex">
+    <view class="item-container">
+      <view class="header">
+        <image class="header-image" src="{{item.data.header.icon}}" />
+        <view class="header-des">
+          <text class="title">{{item.data.header.title}}</text>
+          <text class="des">{{item.data.header.description}}</text>
+        </view>
+      </view>
+      <scroll-view scroll-x enable-flex scroll-y="{{false}}">
+        <view class="horizontal-container">
+          <block wx:for="{{item.data.itemList}}" wx:key="index" wx:for-item="followItem">
+            <view data-outer-index="{{outIndex}}" data-index="{{index}}" bind:tap="go2VideoDetail" class="feed-container">
+              <image class="feed-image" src="{{followItem.data.cover.feed}}" />
+              <view class="category-container">
+                <text class="category-text">{{followItem.data.category}}</text>
+              </view>
+              <text class="horizontal-title">{{followItem.data.title}}</text>
+              <text class="release-time">{{followItem.releaseTimeStr}}</text>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+      <view class="line"/>
+    </view>
+  </block>
+  <l-loadmore show="{{true}}" />
+</view>

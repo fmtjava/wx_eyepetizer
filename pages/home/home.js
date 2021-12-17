@@ -51,14 +51,17 @@ Page({
       case 0:
         this.selectComponent("#daily").onRefresh()
         break;
-      case 1:
+      case 2:
+        this.selectComponent("#follow").onRefresh()
+        break;  
+      case 2:
         this.selectComponent("#category").onRefresh()
         break;
-      case 2:
+      case 3:
         const newsComponent = this.selectComponent("#news")
         newsComponent.onRefresh()
         break      
-      case 3:
+      case 4:
         this.selectComponent("#recommend").onRefresh()
         break  
     }
@@ -74,12 +77,16 @@ Page({
         dailyComponent.onLoadMore()
         break;
       case 1:
+        const followComponent = this.selectComponent("#follow")
+        followComponent.onLoadMore()
         break;  
       case 2:
+          break;  
+      case 3:
         const newsComponent = this.selectComponent("#news")
         newsComponent.onLoadMore()
         break  
-      case 3:
+      case 4:
         const recommendComponent = this.selectComponent("#recommend")
         recommendComponent.onLoadMore()
         break  

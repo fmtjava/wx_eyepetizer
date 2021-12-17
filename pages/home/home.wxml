@@ -1,17 +1,20 @@
 <view class="container">
   <l-segment class="segment" bind:linchange="changeTabs">
     <l-segment-item tab="日报" key="one"  />
-    <l-segment-item tab="分类" key="two" />
-    <l-segment-item tab="新闻" key="third" />
-    <l-segment-item tab="推荐" key="four" />
+    <l-segment-item tab="关注" key="two" />
+    <l-segment-item tab="分类" key="third" />
+    <l-segment-item tab="新闻" key="four" />
+    <l-segment-item tab="推荐" key="five" />
   </l-segment>
 
   <daily-tab id="daily" wx:if="{{currentIndex === 0}}"/>
 
-  <category-tab id="category" wx:if="{{currentIndex === 1}}"/>
+  <follow-tab id="follow" wx:if="{{currentIndex === 1}}"/>
 
-  <news-tab id= "news" wx:if="{{currentIndex === 2}}"/>
+  <category-tab id="category" wx:if="{{currentIndex === 2}}"/>
 
-  <recommend-tab id= "recommend" wx:if="{{currentIndex === 3}}"/>
+  <news-tab id= "news" wx:if="{{currentIndex === 3}}"/>
+
+  <recommend-tab id= "recommend" wx:if="{{currentIndex === 4}}"/>
 
 </view>

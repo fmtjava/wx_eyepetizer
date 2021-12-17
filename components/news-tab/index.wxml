@@ -8,4 +8,5 @@
       </block>
     </view>
   </block>
+  <l-loadmore show="{{true}}"/>
 </view>
