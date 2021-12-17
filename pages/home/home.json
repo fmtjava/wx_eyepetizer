@@ -7,6 +7,7 @@
     "daily-tab":"/components/daily-tab/index",
     "follow-tab":"/components/follow-tab/index",
     "category-tab":"/components/category-tab/index",
+    "topic-tab":"/components/topic-tab/index",
     "news-tab":"/components/news-tab/index",
     "recommend-tab":"/components/recommend-tab/index"
   },

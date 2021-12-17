@@ -1,0 +1,21 @@
+/* components/topic-tab/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.image{
+  width: 100%;
+  height: 400rpx;
+  border-radius: 8rpx;
+  margin-top: 10rpx;
+}
+
+.line{
+  height: 1px;
+  background-color: #0000001F;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}

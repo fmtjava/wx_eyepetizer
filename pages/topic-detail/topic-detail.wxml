@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="head-container">
+    <image class="head-image" src="{{topDetail.headerImage}}"/>
+    <text class="des-text">{{topDetail.text}}</text>
+    <view class="brief-container">
+      <text class="brief">{{topDetail.brief}}</text>
+    </view>
+  </view>
+  <view class="head-space"/>
+  <block wx:for="{{topDetail.itemList}}" wx:key="index">
+    <daily-item item="{{item.data.content}}" />
+  </block>
+</view>

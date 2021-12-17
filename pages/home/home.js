@@ -51,17 +51,20 @@ Page({
       case 0:
         this.selectComponent("#daily").onRefresh()
         break;
-      case 2:
+      case 1:
         this.selectComponent("#follow").onRefresh()
         break;  
       case 2:
         this.selectComponent("#category").onRefresh()
         break;
       case 3:
+        this.selectComponent("#topic").onRefresh()
+        break;    
+      case 4:
         const newsComponent = this.selectComponent("#news")
         newsComponent.onRefresh()
         break      
-      case 4:
+      case 5:
         this.selectComponent("#recommend").onRefresh()
         break  
     }
@@ -73,22 +76,21 @@ Page({
   onReachBottom: function () {
     switch(this.data.currentIndex){
       case 0:
-        const dailyComponent = this.selectComponent("#daily")
-        dailyComponent.onLoadMore()
+        this.selectComponent("#daily").onLoadMore()
         break;
       case 1:
-        const followComponent = this.selectComponent("#follow")
-        followComponent.onLoadMore()
+       this.selectComponent("#follow").onLoadMore()
         break;  
       case 2:
-          break;  
+          break; 
       case 3:
-        const newsComponent = this.selectComponent("#news")
-        newsComponent.onLoadMore()
-        break  
+        this.selectComponent("#topic").onLoadMore()
+          break      
       case 4:
-        const recommendComponent = this.selectComponent("#recommend")
-        recommendComponent.onLoadMore()
+       this.selectComponent("#news").onLoadMore()
+        break  
+      case 5:
+        this.selectComponent("#recommend").onLoadMore()
         break  
     }
   },

@@ -1,0 +1,7 @@
+<view class="container">
+  <block wx:for="{{topicList}}" wx:key="index">
+    <image data-index="{{index}}" class="image" bind:tap="go2TopicDetail" src="{{item.data.image}}"/>
+    <view class="line"/>
+  </block>
+  <l-loadmore show="{{true}}" />
+</view>

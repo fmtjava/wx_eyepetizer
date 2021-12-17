@@ -1,0 +1,50 @@
+/* pages/topic-detail/topic-detail.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.head-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.head-image{
+  width: 100%;
+  height: 500rpx;
+}
+
+.brief-container{
+  display: flex;
+  position: absolute;
+  background-color: #ffffff;
+  height: 100rpx;
+  border-radius: 8rpx;
+  border: 1px solid #eeeeee;
+  left: 40rpx;
+  top: 460rpx;
+  right: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.brief{
+  font-size: 28rpx;
+  color: #000000;
+  font-weight: bold;
+}
+
+.des-text{
+  font-size: 24rpx;
+  color: #9a9a9a;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 80rpx;
+  padding-bottom: 20rpx;
+}
+
+.head-space{
+  height: 10rpx;
+  background-color: #eeeeee;
+}
